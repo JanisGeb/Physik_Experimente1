@@ -10,7 +10,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
-
+import android.view.View.OnClickListener;
+import android.widget.Button;
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
@@ -18,6 +19,7 @@ import android.view.View;
  * @see SystemUiHider
  */
 public class Klasse_11_activity extends Activity {
+	Button BTN_zurueck;
 	/**
 	 * Whether or not the system UI should be auto-hidden after
 	 * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
@@ -51,7 +53,16 @@ public class Klasse_11_activity extends Activity {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.activity_klasse_11);
-
+		BTN_zurueck=(Button)findViewById(R.id.dummy_button);
+			BTN_zurueck.setOnClickListener(new OnClickListener()
+			{
+					public void onClick(View v)
+						{
+						Intent intent = new Intent ();
+						setResult (RESULT_OK, intent);
+						finish();
+						}
+			});
 		final View controlsView = findViewById(R.id.fullscreen_content_controls);
 		final View contentView = findViewById(R.id.fullscreen_content);
 
@@ -162,8 +173,5 @@ public class Klasse_11_activity extends Activity {
 	}
 	
 	public void onClickButton_Uebersicht (View view) {
-		Intent intent = new Intent ();
-		setResult (RESULT_OK, intent);
-		finish();
 	}
 }
