@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Physik Experimente</string>
+    <string name="str_Uebersicht">Zurück zur Übersicht</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="str_Klasse_11">Klasse 11</string>
+    <string name="str_Klasse_12">Klasse 12</string>
+    <string name="title_activity_klasse_11_activity">Klasse 11 Übersicht</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="title_activity_klasse_12_activity">Klasse 12 Übersicht</string>
+
+</resources>
